@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="BlazorServerDevExpXAF">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="@2386ed34-db1d-4e45-91ec-0af8503ff3d7" ViewId="Order_ListView" ImageName="BO_Invoice" QuickAccessItem="True" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="22.2.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="22.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Order_DetailView">
+      <Items>
+        <PropertyEditor Id="Freight" Caption="Freight Cost" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>
